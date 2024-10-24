@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Band</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/font/themify-icons-font/themify-icons.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<!-- 
+    1. Component
+        - Header
+        - slider
+        - content
+            + about
+            + tour
+            + img
+        - footer
+    2. Nguyên tắc
+        - từ ngoài vào trong
+        - từ trên xuống dưới
+        - từ tổng quan đến chi tiết
+    3. Đặt vấn đề CSS
+        - Vị trí
+        - kích thước 
+        - màu sắc
+        - Thuộc tính ...
+ -->
+<body>
+    <div id="main">
+        <header id="header">
+            <ul id="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a>
+                        More
+                        <i class="angle-down-icon ti-angle-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li><a>Merchandise</a></li>
+                        <li><a>Extras</a></li>
+                        <li><a>Media</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="search-btn">
+                <i class="search-icon ti-search"></i>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="mobile-menu-icon ti-menu"></i>
+            </div>
+        </header>
+
+        <div id="slider">
+            <div class="text-contain">
+                <h2 class="text-header">Chicago</h2>
+                <div class="text-description">Thank you, Chicago - A night we won't forget.</div>
+            </div>
+        </div>
+
+        <div id="content">
+            <div class="content-section" id="band">
+                <h2 class="section-heading">THE BAND</h2>
+                <div class="section-sub-heading">We love music</div>
+                <p class="section-about">We have created a fictional band website
+                    . Lorem ipsum dolor sit amet, consectetur adipiscing 
+                    elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip 
+                    ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore
+                    eu fugiat nulla pariatur. Excepteur sint occaecat
+                    cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt
+                    labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <ul class="row">
+                    <li class="col col-third">
+                        <div class="member-name">Name</div>
+                        <img src="./assets/img/members/bandmember.jpg" alt="name" class="member-img mb-16">
+                    </li>
+                    <li class="col col-third">
+                        <div class="member-name">Name</div>
+                        <img src="./assets/img/members/bandmember.jpg" alt="name" class="member-img mb-16">
+                    </li>
+                    <li class="col col-third">
+                        <div class="member-name">Name</div>
+                        <img src="./assets/img/members/bandmember.jpg" alt="name" class="member-img mb-16">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tour-dates" id="tour">
+                <div class="content-section">
+                    <h2 class="section-heading">TOUR DATES</h2>
+                    <div class="section-sub-heading">Remember to book your tickets!</div>
+                    <ul class="tour-list">
+                        <li class="tour-item">
+                            September <span class="tour-sold-out">Sold out</span>
+                        </li>
+                        <li class="tour-item">
+                            October <span class="tour-sold-out">Sold out</span>
+                        </li>
+                        <li class="tour-item">
+                            November <span class="tour-quantity">3</span>
+                        </li>
+                    </ul>
+
+                    <div class="row">
+                        <div class="col col-third mb-16">
+                            <img src="./assets/img/places/newyork.jpg" alt="image" class="tour-place-img">
+                            <div class="tour-place-body">
+                                <h5 class="tour-place-heading">New York</h5>
+                                <p class="tour-place-date">Fri 27 Nov 2016</p>
+                                <p class="tour-place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <div class="btn tour-place-btn">Buy Tickets</div>
+                            </div>
+                        </div>
+    
+                        <div class="col col-third mb-16">
+                            <img src="./assets/img/places/paris.jpg" alt="image" class="tour-place-img">
+                            <div class="tour-place-body">
+                                <h5 class="tour-place-heading">Paris</h5>
+                                <p class="tour-place-date">Sat 28 Nov 2016</p>
+                                <p class="tour-place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <div class="btn tour-place-btn">Buy Tickets</div>
+                            </div>
+                        </div>
+    
+                        <div class="col col-third mb-16">
+                            <img src="./assets/img/places/sanfran.jpg" alt="image" class="tour-place-img">
+                            <div class="tour-place-body">
+                                <h5 class="tour-place-heading">San Francisco</h5>
+                                <p class="tour-place-date">Sun 29 Nov 2016</p>
+                                <p class="tour-place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <div class="btn tour-place-btn">Buy Tickets</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal">
+                        <div class="modal-container">
+                            <i class="modal-close ti-close"></i>
+
+                            <header class="modal-header">
+                                <i class="ti-briefcase"></i>
+                                Tickets
+                            </header>
+
+                            <div class="modal-body">
+                                <label for="" class="modal-label">
+                                    <i class="ti-shopping-cart"></i>
+                                    Tickets, $15 per person
+                                </label>
+                                <input type="text" class="modal-input" placeholder="How many?">
+                                <label for="" class="modal-label">
+                                    <i class="ti-user"></i>
+                                    Send To
+                                </label>
+                                <input type="text" class="modal-input" placeholder="Enter email">
+                                <div class="modal-btn">
+                                    Pay
+                                    <i class="ti-check"></i>
+                                </div>
+                            </div>
+
+                            <footer class="modal-footer">Need <a href="#" class="modal-help">help?</a></footer>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="contact" class="content-section">
+                <h2 class="section-heading">Contact</h2>
+                <div class="section-sub-heading">Fan? Drop a note!</div>
+                <div class="row">
+                    <div class="contact-info col col-second mb-16">
+                        <p><i class="ti-location-pin"></i> Chicago, US</p>
+                        <p><i class="ti-mobile"></i> Phone: <a href="tel:+00 151515">+00 151515</a></p>
+                        <p><i class="ti-email"></i> Email: <a href="mailto:mail@mail.com">mail@mail.com</a></p>
+                    </div>
+
+                    <div class="col col-second">
+                        <form action="" class="contact-form">
+                            <div class="row">
+                                <div class="col col-second mb-8">
+                                    <input type="text" required placeholder="Name" class="contact-input">
+                                </div>
+                                <div class="col col-second mb-8">
+                                    <input type="email"required  placeholder="Email" class="contact-input">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col col-full">
+                                    <input type="text" required placeholder="Message" class="contact-input">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col col-full">
+                                    <input type="submit" value="SEND" class="btn contact-submit-btn">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div><img src="./assets/img/map.jpg" alt="map" class="map-img"></div>
+        </div>
+
+        <footer id="footer">
+            <div class="content-section">
+                <div class="socials">
+                    <i class="ti-facebook"></i>
+                    <i class="ti-instagram"></i>
+                    <i class="ti-youtube"></i>
+                    <i class="ti-pinterest"></i>
+                    <i class="ti-twitter"></i>
+                    <i class="ti-linkedin"></i>
+                </div>
+                <p class="copyright section-sub-heading">Powered by <a>w3.css</a></p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        const buyBtns = document.querySelectorAll(".tour-place-btn")
+        const closeBtn = document.querySelector(".modal-close")
+        const modal = document.querySelector('.modal')
+        const modalContainer = document.querySelector('.modal-container')
+        const showTicket = () => {
+            modal.classList.add('open')
+        }
+        const closeTicket = () => {
+            modal.classList.remove('open')
+        }
+
+        for (buyBtn of buyBtns) {
+            buyBtn.addEventListener('click', showTicket)
+        }
+        closeBtn.addEventListener('click', closeTicket)
+        modal.addEventListener('click', closeTicket)        
+        modalContainer.addEventListener('click', (event)=> {
+            event.stopPropagation()
+        })
+
+
+    </script>
+
+    <script>
+        const navBar = document.querySelector('#nav')
+        const menuBtn = document.querySelector(".mobile-menu-btn")
+        const navBarHeight = navBar.clientHeight
+        
+        menuBtn.onclick = () => {
+            if (navBar.clientHeight === navBarHeight) navBar.style.height = 'auto'
+            else navBar.style.height = null
+        }
+
+        // auto close menu
+        const menuItems = document.querySelectorAll("#nav>li>a[href*='#']")
+
+        for (menuItem of menuItems) {
+            menuItem.onclick = function() {
+                navBar.style.height = null
+            }
+        }
+    </script>
+</body>
+</html>
